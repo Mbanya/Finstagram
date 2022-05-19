@@ -28,7 +28,12 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [_titleWidget(), _loginForm(), _loginButton()],
+            children: [
+              _titleWidget(),
+              _loginForm(),
+              _loginButton(),
+              _registerPageLink()
+            ],
           )),
         ),
       ),
@@ -115,6 +120,17 @@ class _LoginPageState extends State<LoginPage> {
           fontSize: 18,
           fontWeight: FontWeight.w400,
         ),
+      ),
+    );
+  }
+
+  Widget _registerPageLink() {
+    return GestureDetector(
+      onTap: () => Navigator.pushNamed(context, 'register'),
+      child: const Text(
+        "Don't have an account?",
+        style: TextStyle(
+            color: Colors.blue, fontSize: 15, fontWeight: FontWeight.w300),
       ),
     );
   }
