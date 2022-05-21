@@ -8,7 +8,9 @@ Flutter tutorial where i create a stripped down version of Instagram
 - Firebase
 - Forms
 - UI Building 
-- etc ..
+- Get It Package
+- Authentication
+- Streams & Snapshots
 
 
 Screenshots coming soon
